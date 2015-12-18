@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/gridDeviceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_corner_disc" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/deviceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/rssiLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/deviceName"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/rssiText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/rssi"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rssi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/macAddressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rssiLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/deviceMacAddressText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:text="@string/mac_address"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/deviceMacAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+                </TableRow>
+
+                <LinearLayout
+                    android:id="@+id/advertisementDataLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" >
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

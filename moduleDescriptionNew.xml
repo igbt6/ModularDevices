@@ -1,0 +1,220 @@
+﻿<Modules>
+	<Module id="4344901" name="Bluetooth module" icon="m_ic_mod_ble">
+		<Variable 
+            name="test"       
+            unit=""   
+            icon="m_ic_mod_ble_test">
+            <VarRead
+                equation="d[10]+d[11]/100"> 
+            </VarRead>
+        </Variable>
+    </Module>
+    <Module id="4543310" name="Environmental sensor" icon="m_ic_mod_env">
+        <Variable 
+            name="Humidity"          
+            unit="%RH"              
+            icon="m_ic_mod_env_hum">
+            <VarRead
+                equation="d[4]+d[5]/100">
+            </VarRead>          
+        </Variable>
+		<Variable 
+            name="Temperature"     
+             
+            unit="°C"            
+            icon="m_ic_mod_env_temp">
+            <VarRead
+                equation="d[6]+d[7]/100" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Ambient light"             
+            unit="lux"               
+            icon="m_ic_mod_env_light">
+            <VarRead
+                equation="d[8]*256+d[9]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="UV index"                  
+            unit=""                 
+            icon="m_ic_mod_env_uv">
+            <VarRead
+                equation="d[10]*256+d[11]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Pressure"        
+            
+            unit="hPa"  
+            icon="m_ic_mod_env_baro">
+                        <VarRead
+                 equation="d[14]*1000+d[15]*10+d[16]/10">
+            </VarRead>  
+        </Variable>
+		<Variable name="BMP085 temp"     
+             
+            unit="°C"    
+            icon="m_ic_mod_env_barotemp">
+                        <VarRead
+                equation="d[12]+d[13]/10" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Compass X"       
+            
+            unit=""    
+            icon="m_ic_mod_env_comp_x">
+                        <VarRead
+                equation="d[17]*256+d[18]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Compass Y"       
+            
+            unit=""    
+            icon="m_ic_mod_env_comp_y">
+                        <VarRead
+                equation="d[19]*256+d[20]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Compass Z"       
+            
+            unit=""    
+            icon="m_ic_mod_env_comp_z">
+                        <VarRead
+                equation="d[21]*256+d[22]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Accel X"         
+ 
+            unit="m/(s^2)"    
+            icon="m_ic_mod_env_accel_x">
+            <VarRead
+                     equation="d[23]*256+d[24]">
+            </VarRead>  
+        </Variable>
+		<Variable name="Accel Y"         
+            unit="m/(s^2)"    
+            icon="m_ic_mod_env_accel_y">
+            <VarRead
+                equation="d[25]*256+d[26]">
+            </VarRead>  
+        </Variable>
+		<Variable name="Accel Z"         
+            unit="m/(s^2)"    
+            icon="m_ic_mod_env_accel_z">
+            <VarRead
+                equation="d[27]*256+d[28]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Gyro X"                     
+            unit=""         
+            icon="m_ic_mod_env_gyro_x">
+            <VarRead
+                equation="d[29]*256+d[30]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Gyro Y"          
+            
+            unit=""         
+            icon="m_ic_mod_env_gyro_y">
+            <VarRead
+                equation="d[31]*256+d[32]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Gyro Z"          
+            
+            unit=""         
+            icon="m_ic_mod_env_gyro_z">
+            <VarRead
+                equation="d[33]*256+d[34]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Step count"            
+            unit=""      
+            icon="m_ic_mod_env_pedo_cnt">
+            <VarRead
+                equation="d[35]*16777216+d[36]*65536+d[37]*256+d[38]" >
+            </VarRead>  
+        </Variable>
+		<Variable name="Step time"  
+            unit="ms"   
+            icon="m_ic_mod_env_pedo_time">
+            <VarRead
+                equation="d[39]*16777216+d[40]*65536+d[41]*256+d[42]" >
+            </VarRead>  
+        </Variable>
+    </Module>
+	<Module id="4997699" name="LiPol controller" icon="m_ic_mod_bat">
+		<Variable name="Battery voltage"        
+            unit="V"         
+            icon="m_ic_mod_bat_voltage">
+            <VarRead
+                equation="(d[4]*256+d[5])/65535*6">
+            </VarRead>  
+        </Variable>
+		<Variable name="Battery temperature"    
+            unit="°C"          
+            icon="m_ic_mod_bat_temp">
+            <VarRead
+                equation="(d[6]*256+d[7])/65535*600-273.15">
+            </VarRead>  
+        </Variable>
+		<Variable name="Battery charge"          
+            unit="uAh"           
+            icon="m_ic_mod_bat_u_ah">
+            <VarRead
+                equation="(65535-(d[8]*256+d[9]))*85/10">
+            </VarRead>  
+        </Variable>
+		<Variable name="Battery discharge rate"  
+            unit="uAh/min"           
+            icon="m_ic_mod_bat_disch_rate">
+            <VarRead
+                equation="d[10]*256+d[11]" >
+            </VarRead>  
+        </Variable>
+    </Module>
+	<Module id="5270628" name="Power LED controller" icon="m_ic_mod_led">
+		<Variable name="LED on"
+            unit=""             
+            icon="m_ic_mod_led_on_off">
+            <VarRead
+                equation="d[4]%2">
+            </VarRead>  
+        </Variable>
+		<Variable name="Torch current"		           
+            unit="mA"              
+            icon="m_ic_mod_led_torch_current">
+            <VarRead
+                equation="(((d[4]-d[4]%4)/4)%8)*25+25">
+            </VarRead>
+            <VarWrite 
+                type="int"
+                default="50"
+                step="25"
+                byte_nr="0"
+                bit="d[2]-d[7]">
+            </VarWrite>
+        </Variable>
+		<Variable name="Flash current"                    
+            unit="mA"  
+            icon="m_ic_mod_led_flash_current">
+            <VarRead
+                equation="(((d[5]-d[5]%4)/4)%32)*50+300">
+            </VarRead>  
+        </Variable>
+		<Variable name="Flash time"           
+            unit="ms"              
+            icon="m_ic_mod_led_flash_time">
+            <VarRead
+                equation="d[6]*100+100">
+            </VarRead>  
+        </Variable>
+    </Module>
+        <Module id="5007476" name="User Interface Module" icon="m_ic_mod_userint">
+        <Variable name="Gesture"         
+            unit=""  
+            icon="m_ic_mod_userint_gesture">
+            <VarRead
+                equation="d[4]%2" >
+            </VarRead>  
+        </Variable>	
+    </Module>
+</Modules>

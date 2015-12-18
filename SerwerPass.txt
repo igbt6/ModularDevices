@@ -1,0 +1,11 @@
+Edycja:
+http://5.196.75.220/mobile-config/edit/
+
+email: admin@gluonium.com
+password: faza1234
+http://5.196.75.220/mobile-config/
+
+gluonium.com:22
+User luszko 
+pass: luszko123
+Folder /var/www/xml/ 

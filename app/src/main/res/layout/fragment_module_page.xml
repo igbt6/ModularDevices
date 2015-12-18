@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- FOR FUTURE , MAYBE OR NOT
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/fragment_module_page_module_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/fragment_module_page_text_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+</LinearLayout>
+
+    -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_module_page_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_module_page_scrollable_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Gluonium</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="properties_array">
+        <item>SomeStuff</item>
+        <item>OtherStuff</item>
+    </string-array>
+
+
+
+    <string name="uuid">Uuid: </string>
+    <string name="properties">Properties: </string>
+    <string name="devices">Devices</string>
+    <string name="scanning">Scanning...</string>
+    <string name="not_scanning"></string>
+    <string name="services">Services</string>
+    <string name="characteristics">Characteristics</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="values">Values</string>
+    <string name="properties_big_case">Properties: </string>
+    <string name="hex">Hex</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_service">Unknown service</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="characteristic_write_success">Characteristic write success</string>
+    <string name="characteristic_write_fail">Characteristic write fail</string>
+    <string name="invalid_dec_value">Value is invalid. You have to input max 3 digits side by side and max value is 255.</string>
+    <string name="parse_problem">The problem occurred during characteristic parsing.</string>
+    <string name="ble_not_supported">Your phone does not support Bluetooth Low Energy technology. Application will be closed! </string>
+    <string name="bluetooth_not_supported">Your phone does not support Bluetooth technology. Application will be closed! </string>
+    <string name="no_bluetooth_dialog_text">You need Bluetooth to use this app. Switch on Bluetooth?</string>
+    <string name="no_bluetooth_dialog_title_text">Bluetooth is off</string>
+    <string name="aboutMenuCaption">About</string>
+    <string name="rssi">Rssi: </string>
+    <string name="mac_address">Mac Address: </string>
+    <string name="no_devices_found">No devices found.</string>
+    <string name="advertisement_details">Show advertisement details</string>
+    <string name="advertisement_details_title">Advertisement details</string>
+    <string name="connecting_title">Bluetooth manager</string>
+    <string name="connecting">Connecting to device. Please wait...</string>
+    <string name="invalid_uuids_title_text">Invalid UUIDs</string>
+    <string name="invalid_uuids_text">There are more than one UUID with the same value. Please check device configuration.</string>
+    <string name="label_read_data">R:</string>
+    <string name="label_write_data">W:</string>
+    <string name="label_device_address">DevAddr:</string>
+    <string name="label_device_name">DevName:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_test_activity">TestMode</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="wait_for_all_devices_discovered">Scanning for available modules...</string>
+
+</resources>

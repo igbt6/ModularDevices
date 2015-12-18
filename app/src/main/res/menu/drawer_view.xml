@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_account"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_control"
+            android:icon="@android:drawable/ic_menu_manage"
+            android:title="Control" />
+        <item
+            android:id="@+id/nav_devices"
+            android:icon="@drawable/ic_logout"
+            android:title="Devices" />
+    </group>
+
+    <item android:title="App Settings">
+        <menu>
+            <item
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="Help" />
+            <item
+                android:icon="@android:drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

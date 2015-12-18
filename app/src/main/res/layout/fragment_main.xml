@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:showIn="@layout/activity_main"
+    tools:context=".MainActivityFragment">
+
+    <ProgressBar
+        android:id="@+id/scanProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="15dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/devicesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/devices"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/horizontalDevicesLabel"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="1dp"
+            android:layout_below="@id/devicesLabel"
+            android:background="@color/colorPrimary" />
+
+        <GridView
+            android:id="@+id/deviceGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/horizontalDevicesLabel"
+            android:gravity="center"
+            android:numColumns="1"
+            android:stretchMode="columnWidth" />
+
+        <TextView
+            android:id="@+id/noDevicesFoundLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:text="@string/no_devices_found"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

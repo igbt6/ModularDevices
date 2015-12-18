@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:layout_height="?attr/listPreferredItemHeight"
+        android:weightSum="1">
+    <TextView
+        android:id="@+id/test_module_variable_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/test_module_variable_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/test_module_variable_value_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="7dp"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
